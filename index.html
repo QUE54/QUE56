@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Application</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="db.js" defer></script>
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="header">Chat Application</h1>
+        
+        <!-- Join Chat Room -->
+        <div class="section" id="join-chat">
+            <h2 class="section-title">Join Chat Room</h2>
+            <form id="join-form" class="form">
+                <input type="number" id="room-id" class="input" placeholder="Room ID" required>
+                <input type="text" id="room-code" class="input" placeholder="Room Code" required>
+                <input type="text" id="nickname" class="input" placeholder="Your Nickname" required>
+                <button type="submit" class="button">Join Room</button>
+            </form>
+        </div>
+        
+        <!-- Create Chat Room -->
+        <div class="section" id="create-chat">
+            <h2 class="section-title">Create Chat Room</h2>
+            <form id="create-form" class="form">
+                <input type="text" id="chat-name" class="input" placeholder="Chat Room Name" required>
+                <input type="text" id="chat-code" class="input" placeholder="Room Code" required>
+                <textarea id="description" class="textarea" placeholder="Description"></textarea>
+                <button type="submit" class="button">Create Room</button>
+            </form>
+            <div id="room-id-display" class="room-id-display"></div>
+            <input type="hidden" id="room-id-value">
+        </div>
+    </div>
+</body>
+</html>

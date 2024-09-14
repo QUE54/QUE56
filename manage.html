@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Chat Rooms</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="db.js" defer></script>
+    <script src="manage.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="header">Manage Chat Rooms</h1>
+        <form id="search-form" class="form">
+            <input type="number" id="search-room-id" class="input" placeholder="Enter Room ID to Search" required>
+            <button type="submit" class="button">Search</button>
+        </form>
+
+        <div id="room-details" class="section">
+            <h2 class="section-title">Room Details</h2>
+            <form id="update-form" class="form">
+                <input type="text" id="update-chat-name" class="input" placeholder="Chat Room Name" required>
+                <input type="text" id="update-chat-code" class="input" placeholder="Room Code" required>
+                <textarea id="update-description" class="textarea" placeholder="Description"></textarea>
+                <button type="submit" class="button">Update Room</button>
+                <button type="button" id="delete-room" class="button delete-button">Delete Room</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
